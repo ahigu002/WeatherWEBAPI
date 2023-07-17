@@ -125,7 +125,7 @@ st.header("Weather Data")
 time_index = pd.date_range('2023-01-01', periods=100)
 time_series_df = pd.DataFrame(np.random.randn(100, 2), index=time_index, columns=['A', 'B'])
 
-# Line chart
+# Line chart for time series data column 'A'
 st.line_chart(time_series_df['A'])
 
 # Area chart
